@@ -3,6 +3,14 @@ import Hero from "../components/Hero.astro"
 import Navbar from "../components/Navbar.astro"
 ---
 
+
+<style>
+	.grid-bg{
+		background: url(https://astro.build/assets/noise.webp) repeat,linear-gradient(83.21deg,#3245ff 0%,#bc52ee 100%);
+	}
+</style>
+
+
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
@@ -11,7 +19,9 @@ import Navbar from "../components/Navbar.astro"
 		<meta name="generator" content={Astro.generator} />
 		<title>Uploadfly | Really simple file uploads</title>
 	</head>
+
 	<body class="bg-uf-dark text-uf-light">
+		<div class="grid-bg"></div>
 		<Navbar/>
 		<Hero/>
 	</body>

@@ -1,10 +1,43 @@
 ---
 import {Icon} from "astro-icon"
 ---
+<style>
+    .font-gradient {
+    background: linear-gradient(to right bottom,#fff 20%,hsla(0,0%,100%,.5));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: unset;
+}
+.shiny-text {
+  -webkit-animation: shine 2s linear infinite alternate;
+  animation: shine 2s linear infinite alternate;
+  border-style: none;
+  color: #ededed;
+  font-weight: 500;
+  -webkit-mask-image: linear-gradient(
+    -75deg,
+    rgba(0, 0, 0, 0.6) 30%,
+    #000 50%,
+    rgba(0, 0, 0, 0.6) 70%
+  );
+  -webkit-mask-size: 200%;
+  outline: none;
+  text-decoration: none;
+}
 
+@keyframes shine {
+  0% {
+    -webkit-mask-position: 150%;
+  }
+  100% {
+    -webkit-mask-position: -50%;
+  }
+}
+</style>
 
-<div class="flex flex-col items-center mt-14">
-    <h1 class="text-7xl font-bold text-center w-[65%]">Really simple file uploads for web apps.</h1>
-<p class="my-10 w-[70%] text-center text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore doloremque sequi eveniet quo eligendi voluptates est fugit, distinctio impedit odit?</p>
-<a href="https://app.uploadfly.cloud/login" class="bg-uf-accent text-uf-light font-semibold py-4 px-16 rounded-md text-xl">Get Started</a>
+<div class="flex flex-col items-center mt-8">
+    <a href="https://github.com/uploadfly" target="_blank" class="border-2 py-2 px-5 rounded-full mb-2">We're Opensource! | Star us on GitHub</a>
+    <h1 class="text-7xl font-bold text-center w-[65%] shiny-text">Expovoluminously awesome file uploads.</h1>
+<p class="my-5 w-[60%] text-center text-xl text-slate-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore doloremque sequi eveniet quo eligendi voluptates est fugit, distinctio impedit odit?</p>
 </div>
