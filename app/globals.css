@@ -56,3 +56,15 @@ body {
   background-image: url("https://d19172n4opxkkj.cloudfront.net/k70M5W/grid-pattern-d2mZnt-mOv.png");
   @apply h-screen bg-center bg-cover w-full opacity-30;
 }
+
+.font-gradient {
+  background: linear-gradient(
+    to right bottom,
+    #fff 30%,
+    hsla(0, 0%, 100%, 0.5)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: unset;
+}
