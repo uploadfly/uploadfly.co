@@ -25,3 +25,34 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.shiny-text {
+  -webkit-animation: shine 2s linear infinite alternate;
+  animation: shine 2s linear infinite alternate;
+  border-style: none;
+  color: #ededed;
+  font-weight: 500;
+  -webkit-mask-image: linear-gradient(
+    -75deg,
+    rgba(0, 0, 0, 0.6) 30%,
+    #000 50%,
+    rgba(0, 0, 0, 0.6) 70%
+  );
+  -webkit-mask-size: 200%;
+  outline: none;
+  text-decoration: none;
+}
+
+@keyframes shine {
+  0% {
+    -webkit-mask-position: 150%;
+  }
+  100% {
+    -webkit-mask-position: -50%;
+  }
+}
+
+.grid-bg {
+  background-image: url("https://d19172n4opxkkj.cloudfront.net/k70M5W/grid-pattern-d2mZnt-mOv.png");
+  @apply h-screen bg-center bg-cover w-full opacity-30;
+}
