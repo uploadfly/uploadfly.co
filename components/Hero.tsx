@@ -5,13 +5,12 @@ import { BsArrowRightShort } from "react-icons/bs";
 const Hero = () => {
   return (
     <div className="flex flex-col items-center mt-10 relative pb-36">
-      {/* <div className="grid-bg absolute -z-[10] top-0 -translate-y-52"></div> */}
       <Link
         href="https://github.com/uploadfly/uploadfly"
         target="_blank"
         className="border-2 border-slate-200 py-2 px-5 rounded-full text-slate-200 flex items-center hover:text-accent transition-colors group hover:border-accent"
       >
-        We're Opensource!
+        {`We're Opensource!`}
         <div className="h-[20px] w-[1px] bg-slate-200 mx-2 group-hover:bg-accent" />
         <div className="flex items-center">
           <SiGithub className="mr-1" /> Star us on GitHub
