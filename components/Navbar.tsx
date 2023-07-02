@@ -9,14 +9,14 @@ const Navbar = () => {
       <div className=""></div>
       <div className="flex items-center gap-4">
         <Link
-          href="https://github.com/uploadfly"
+          href="https://beta.uploadfly.cloud/login"
           target="_blank"
           className="font-semibold hover:text-accent transition-colors"
         >
           Login
         </Link>
         <Link
-          href="https://app.uploadfly.cloud/request"
+          href="https://beta.uploadfly.cloud/signup"
           target="_blank"
           className="px-5 py-2 font-semibold border-2 rounded-full hover:border-accent transition-colors"
         >
