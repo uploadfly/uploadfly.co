@@ -15,6 +15,7 @@ const nextConfig = {
       {
         source: "/docs",
         destination: "https://docs.uploadfly.cloud",
+        permanent: true,
       },
     ];
   },
