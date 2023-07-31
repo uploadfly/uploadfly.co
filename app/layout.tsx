@@ -6,7 +6,7 @@ import PlausibleProvider from "next-plausible";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Uploadfly - Really simple file uploads",
+  title: "Uploadfly • Really simple file uploads",
   description:
     "Uploadfly makes it easy to add file uploads to your applications.",
 };
