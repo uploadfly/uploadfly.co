@@ -18,7 +18,7 @@ const Navbar = () => {
         <Link
           href="https://beta.uploadfly.cloud/signup"
           target="_blank"
-          className="px-5 py-2 font-semibold rounded-full bg-accent transition-colors hover:translate-y-1 transition-all"
+          className="px-5 py-2 font-semibold rounded-full bg-accent hover:translate-y-1 transition-all"
         >
           Get started
         </Link>
