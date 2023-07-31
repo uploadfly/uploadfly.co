@@ -1,6 +1,7 @@
 import Features from "@/components/Features";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
+import Ready from "@/components/Ready";
 import TechStack from "@/components/TechStack";
 import UpTime from "@/components/UpTime";
 import PlausibleProvider from "next-plausible";
@@ -22,6 +23,7 @@ export default function Home() {
       <Features />
       {/* <TechStack /> */}
       <UpTime />
+      <Ready/>
     </PlausibleProvider>
   );
 }
