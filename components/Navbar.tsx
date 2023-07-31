@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <div className="flex items-center justify-between py-6 lg:px-10 px-4 bg-[rgba(0,0,0,0.05)] backdrop-blur-[10px]">
+    <div className="flex items-center justify-between py-6 lg:px-10 px-4">
       <a href="">
         <img src="/logo.svg" alt="Logo" className="lg:w-12 w-10" />
       </a>
