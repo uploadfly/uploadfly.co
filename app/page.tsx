@@ -4,11 +4,10 @@ import Navbar from "@/components/Navbar";
 import Ready from "@/components/Ready";
 import TechStack from "@/components/TechStack";
 import UpTime from "@/components/UpTime";
-import PlausibleProvider from "next-plausible";
 
 export default function Home() {
   return (
-    <PlausibleProvider domain="uploadfly.cloud">
+    <>
       <div
       style={{
         backgroundImage:
@@ -24,6 +23,6 @@ export default function Home() {
       {/* <TechStack /> */}
       <UpTime />
       <Ready/>
-    </PlausibleProvider>
+      </>
   );
 }
