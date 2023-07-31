@@ -17,7 +17,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <PlausibleProvider domain="uploadfly.cloud" trackOutboundLinks>
+    <PlausibleProvider domain="uploadfly.cloud" trackOutboundLinks={true}>
     <html lang="en">
       <body className={inter.className}>{children}</body>
     </html>
