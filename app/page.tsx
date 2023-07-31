@@ -11,7 +11,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Features />
-      <TechStack />
+      {/* <TechStack /> */}
       <UpTime />
     </PlausibleProvider>
   );
