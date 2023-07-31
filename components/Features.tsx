@@ -12,35 +12,41 @@ const Features = () => {
       description:
         "Just your file and your API key. No configs, no buckets, no bs.",
       icon: <FaCreativeCommonsZero />,
+      coming_soon: false,
     },
     {
       heading: "Image optimization",
       description:
         "Improve user experience by reducing image size by up to 80%.",
       icon: <BsImages />,
+      coming_soon:true,
     },
     {
       heading: "Size and type filtering",
       description:
         "Specify filters to include or exclude images based on their size, dimensions or file formats.",
       icon: <HiFilter />,
+      coming_soon:false,
     },
     {
       heading: "Content info",
       description:
         "Extract valuable insights from media files such as MIME type, demensions, file type and more.",
       icon: <TbInfoSquareFilled />,
+      coming_soon:false,
     },
     {
       heading: "Image type conversion",
       description:
         "Easily transform images between popular formats like JPEG, PNG, GIF, or others.",
       icon: <PiSwapBold />,
+      coming_soon:true,
     },
     {
       heading: "AI content detection",
-      description: "Filter out potentially objectionable or unsafe images.",
+      description: "Filter out potentially objectionable or unsafe images using AI.",
       icon: <GiEyeTarget />,
+      coming_soon:true,
     },
   ];
   return (
@@ -54,6 +60,7 @@ const Features = () => {
               <h2 className="font-gradient text-xl font-semibold my-2">
                 {feature?.heading}
               </h2>
+              {feature.coming_soon && <sup className="text-accent text-sm font-semibold">Coming soon</sup>}
             </div>
             <p>{feature?.description}</p>
           </div>
