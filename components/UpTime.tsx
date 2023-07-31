@@ -21,8 +21,8 @@ const UpTime = () => {
       mapBrightness: 6,
       baseColor: [0.3, 0.3, 0.3],
       markerColor: [243 / 255, 88 / 255, 21 / 255],
-      glowColor: [1, 1, 1],
-      markers: [{ location: [0, 0], size: 0.03 }],
+      glowColor: [243 / 255, 88 / 255, 21 / 255],
+      markers: [{ location: [0, 0], size: 0 }],
       onRender: (state) => {
         state.phi = phi;
         phi += 0.01;
