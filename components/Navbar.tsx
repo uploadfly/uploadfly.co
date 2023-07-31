@@ -3,8 +3,9 @@ import Link from "next/link";
 const Navbar = () => {
   return (
     <div className="flex items-center justify-between py-6 lg:px-10 px-4">
-      <a href="">
+      <a href="" className="flex items-center gap-2">
         <img src="/logo.svg" alt="Logo" className="lg:w-12 w-10" />
+<small className="text-sm">Beta ✧･ﾟ</small>
       </a>
       <div className=""></div>
       <div className="flex items-center gap-4">
