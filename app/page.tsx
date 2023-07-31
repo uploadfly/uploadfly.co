@@ -8,8 +8,17 @@ import PlausibleProvider from "next-plausible";
 export default function Home() {
   return (
     <PlausibleProvider domain="uploadfly.cloud">
-      <Navbar />
+      <div
+      style={{
+        backgroundImage:
+          "linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(/grid-bg.png)",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+      >
+        <Navbar />
       <Hero />
+      </div>
       <Features />
       {/* <TechStack /> */}
       <UpTime />
