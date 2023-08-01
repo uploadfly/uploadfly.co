@@ -2,6 +2,7 @@
 
 import createGlobe from "cobe";
 import { useRef, useEffect } from "react";
+import { Balancer } from "react-wrap-balancer";
 
 const UpTime = () => {
   const canvasRef = useRef() as { current: any };
@@ -34,10 +35,10 @@ const UpTime = () => {
     };
   }, []);
   return (
-    <div className="my-20">
-      <h1 className="shiny-text text-center text-4xl">
+    <div className="my-20 flex items-center flex-col">
+      <Balancer className="shiny-text text-center text-4xl">
         99.99999999999% up time
-      </h1>
+      </Balancer>
       <p className="text-slate-200 text-center text-xl lg:w-[50%] w-[90%] mx-auto mt-3">
         Delivery through 450+ global CDN locations ensuring consistent and rapid
         content delivery for your users anytime, anywhere.
