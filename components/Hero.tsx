@@ -8,7 +8,7 @@ const Hero = () => {
       <Link
         href="https://github.com/uploadfly/uploadfly"
         target="_blank"
-        className="border-2 border-slate-200 py-2 px-5 rounded-full text-slate-200 flex items-center hover:text-accent transition-colors group hover:border-accent"
+        className="border-2 text-sm border-slate-200 py-2 px-3 rounded-full text-slate-200 flex items-center hover:text-accent transition-colors group hover:border-accent"
       >
         {`We're Opensource!`}
         <div className="h-[20px] w-[1px] bg-slate-200 mx-2 group-hover:bg-accent" />
