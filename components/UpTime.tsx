@@ -36,7 +36,7 @@ const UpTime = () => {
   }, []);
   return (
     <div className="my-20 flex items-center flex-col">
-      <Balancer className="shiny-text text-center text-4xl">
+      <Balancer className="shiny-text text-center text-4xl px-5">
         99.99999999999% up time
       </Balancer>
       <p className="text-slate-200 text-center text-xl lg:w-[50%] w-[90%] mx-auto mt-3">
