@@ -2,7 +2,6 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import PlausibleProvider from "next-plausible";
 
-
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -18,9 +17,17 @@ export default function RootLayout({
 }) {
   return (
     <PlausibleProvider domain="uploadfly.cloud" trackOutboundLinks={true}>
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
-    </html>
+      <html lang="en">
+        <meta
+          property="og:image"
+          content="https://cdn.uploadfly.cloud/y6TiT6/2jvPlRvxO02YfHOa.png"
+        />
+        <meta
+          name="twitter:image"
+          content="https://cdn.uploadfly.cloud/y6TiT6/2jvPlRvxO02YfHOa.png"
+        />
+        <body className={inter.className}>{children}</body>
+      </html>
     </PlausibleProvider>
   );
 }
