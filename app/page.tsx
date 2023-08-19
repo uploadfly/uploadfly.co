@@ -10,21 +10,21 @@ export default function Home() {
   return (
     <>
       <div
-      style={{
-        backgroundImage:
-          "linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(/grid-bg.png)",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
+        style={{
+          backgroundImage:
+            "linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(/grid-bg.png)",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
       >
         <Navbar />
-      <Hero />
+        <Hero />
       </div>
       <Features />
       {/* <TechStack /> */}
       <UpTime />
-      <Ready/>
-      <Footer/>
-      </>
+      <Ready />
+      <Footer />
+    </>
   );
 }
