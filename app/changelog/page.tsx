@@ -16,7 +16,7 @@ const Changelog = () => {
         }}
       >
         <h1 className="text-white text-6xl font-bold">Changelog</h1>
-        <p>All the new stuff with Uploadfly</p>
+        <p>All the new stuff with Uploadfly...</p>
       </div>
     </div>
   );
