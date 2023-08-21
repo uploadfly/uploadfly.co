@@ -1,8 +1,5 @@
 import "./globals.css";
-import { Inter } from "next/font/google";
 import PlausibleProvider from "next-plausible";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Uploadfly • Really simple file uploads",
@@ -26,7 +23,7 @@ export default function RootLayout({
           name="twitter:image"
           content="https://cdn.uploadfly.cloud/y6TiT6/2jvPlRvxO02YfHOa.png"
         />
-        <body className={inter.className}>{children}</body>
+        <body>{children}</body>
       </html>
     </PlausibleProvider>
   );
