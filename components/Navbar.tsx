@@ -30,7 +30,7 @@ const Navbar = () => {
             href={link.href}
             key={i}
             className={`hover:text-accent transition-colors ${
-              pathname === link.href ? "text-accent" : ""
+              pathname.includes(link.href) ? "text-accent" : ""
             }`}
           >
             {link.title}
