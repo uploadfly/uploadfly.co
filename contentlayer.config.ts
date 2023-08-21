@@ -28,8 +28,7 @@ export const ChangelogPost = defineDocumentType(() => ({
   computedFields: {
     url: {
       type: "string",
-      resolve: (changelogPost) =>
-        `/changelog/${changelogPost._raw.flattenedPath}`,
+      resolve: (changelogPost) => `/${changelogPost._raw.flattenedPath}`,
     },
   },
 }));
