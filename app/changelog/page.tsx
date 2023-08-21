@@ -26,7 +26,10 @@ const Changelog = () => {
           .sort((a, b) => b.publishedAt.localeCompare(a.publishedAt))
           .map((post: ChangelogPost) => {
             return (
-              <div className="border-b border-accent/50 py-3 w-full">
+              <div
+                className="border-b border-accent/50 py-3 w-full"
+                key={post._id}
+              >
                 <div className="">
                   <p className="mb-5 font-semibold text-accent/80">
                     {post.tag}
