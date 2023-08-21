@@ -35,6 +35,7 @@ const ChangelogPost = ({ params }: { params: { slug: string } }) => {
   }
   return (
     <div>
+      <title>{post.title}</title>
       <div className="border-b border-white/20 w-full sticky top-0 z-50 bg-[#040404]">
         <Navbar />
       </div>
