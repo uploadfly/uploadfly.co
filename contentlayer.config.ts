@@ -24,6 +24,10 @@ export const ChangelogPost = defineDocumentType(() => ({
       type: "string",
       required: true,
     },
+    slug: {
+      type: "string",
+      required: true,
+    },
   },
   computedFields: {
     url: {
