@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import { allChangelogPosts, ChangelogPost } from "contentlayer/generated";
 import { useMDXComponent } from "next-contentlayer/hooks";
+import Link from "next/link";
 
 const Changelog = () => {
   return (
@@ -21,24 +22,30 @@ const Changelog = () => {
         <p>All the new stuff with Uploadfly...</p>
       </div>
       <div className="flex items-center flex-col w-[60%] mx-auto my-10 gap-10">
-        {allChangelogPosts.map((post: ChangelogPost) => {
-          const MDXContent = useMDXComponent(post?.body?.code);
-          return (
-            <div className="border-b border-accent/50 py-3">
-              <div className="">
-                <p className="mb-5 font-semibold text-accent/80">{post.tag}</p>
-                <p className="text-sm font-semibold">
-                  {new Date(post.publishedAt).toDateString()}
-                </p>
-                <h1 className="text-3xl font-bold">{post.title}</h1>
+        {allChangelogPosts
+          .sort((a, b) => b.publishedAt.localeCompare(a.publishedAt))
+          .map((post: ChangelogPost) => {
+            const MDXContent = useMDXComponent(post?.body?.code);
+            return (
+              <div className="border-b border-accent/50 py-3 w-full">
+                <div className="">
+                  <p className="mb-5 font-semibold text-accent/80">
+                    {post.tag}
+                  </p>
+                  <p className="text-sm font-semibold">
+                    {new Date(post.publishedAt).toDateString()}
+                  </p>
 
-                <div className="mt-5 text-lg">
-                  <MDXContent />
+                  <Link href={post.url} className="hover:underline">
+                    <h1 className="text-3xl font-bold">{post.title}</h1>
+                  </Link>
+                  <div className="mt-5 text-lg">
+                    <MDXContent />
+                  </div>
                 </div>
               </div>
-            </div>
-          );
-        })}
+            );
+          })}
       </div>
     </div>
   );
