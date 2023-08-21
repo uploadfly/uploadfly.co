@@ -29,7 +29,7 @@ const Navbar = () => {
           <Link
             href={link.href}
             key={i}
-            className={`hover:text-accent transition-colors ${
+            className={`hover:text-accent font-semibold transition-colors ${
               pathname.includes(link.href) ? "text-accent" : ""
             }`}
           >
