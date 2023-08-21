@@ -1,6 +1,9 @@
 import Navbar from "@/components/Navbar";
+import { allPosts } from "";
+import { useLiveReload } from "next-contentlayer/hooks";
 
 const Changelog = () => {
+  useLiveReload();
   return (
     <div>
       <div className="border-b border-white/20 w-full">
