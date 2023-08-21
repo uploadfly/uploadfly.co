@@ -22,7 +22,7 @@ export default function Home() {
       </div>
       <Features />
       {/* <TechStack /> */}
-      {/* <UpTime /> */}
+      <UpTime />
       <Ready />
       <Footer />
     </>
