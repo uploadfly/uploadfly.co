@@ -1,12 +1,12 @@
 import Navbar from "@/components/Navbar";
+import MDX from "@/utils/MDX";
 import { allChangelogPosts, ChangelogPost } from "contentlayer/generated";
-import { useMDXComponent } from "next-contentlayer/hooks";
 import Link from "next/link";
 
 const Changelog = () => {
   return (
     <div>
-      <div className="border-b border-white/20 w-full">
+      <div className="border-b border-white/20 w-full sticky top-0 bg-[#040404]">
         <Navbar />
       </div>
       <div
@@ -25,7 +25,6 @@ const Changelog = () => {
         {allChangelogPosts
           .sort((a, b) => b.publishedAt.localeCompare(a.publishedAt))
           .map((post: ChangelogPost) => {
-            const MDXContent = useMDXComponent(post?.body?.code);
             return (
               <div className="border-b border-accent/50 py-3 w-full">
                 <div className="">
@@ -40,7 +39,7 @@ const Changelog = () => {
                     <h1 className="text-3xl font-bold">{post.title}</h1>
                   </Link>
                   <div className="mt-5 text-lg">
-                    <MDXContent />
+                    <MDX code={post.body.code} />
                   </div>
                 </div>
               </div>
