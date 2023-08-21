@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
   const links = [
@@ -12,6 +15,8 @@ const Navbar = () => {
     },
   ];
 
+  const pathname = usePathname();
+
   return (
     <div className="flex items-center justify-between py-6 lg:px-10 px-4">
       <Link href="/" className="flex items-center gap-2">
@@ -24,7 +29,9 @@ const Navbar = () => {
           <Link
             href={link.href}
             key={i}
-            className="hover:text-accent transition-colors"
+            className={`hover:text-accent transition-colors ${
+              pathname === link.href ? "text-accent" : ""
+            }`}
           >
             {link.title}
           </Link>
