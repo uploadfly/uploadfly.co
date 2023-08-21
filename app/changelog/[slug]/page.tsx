@@ -40,7 +40,7 @@ const ChangelogPost = ({ params }: { params: { slug: string } }) => {
       <div className="p-4">
         <Link
           href={"/changelog"}
-          className="hover:text-accent flex items-center gap-2 w-fit"
+          className="hover:text-accent flex items-center gap-2 w-fit mb-5"
         >
           <MdKeyboardBackspace />
           Back to Changelog
@@ -49,10 +49,10 @@ const ChangelogPost = ({ params }: { params: { slug: string } }) => {
           <h1 className="text-white text-5xl text-center font-bold">
             {post.title}
           </h1>
-          <div className="mt-10 text-lg w-[50%] mx-auto">
+          <div className="mt-10 text-lg lg:w-[50%] px-7 mx-auto">
             <MDX code={post.body.code} />
           </div>
-          <p className="text-xs font-semibold text-accent/80">
+          <p className="text-xs font-semibold text-accent/80 mt-5">
             {new Date(post.publishedAt).toDateString()}
           </p>
         </div>
