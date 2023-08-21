@@ -1,13 +1,35 @@
 import Link from "next/link";
 
 const Navbar = () => {
+  const links = [
+    {
+      title: "Docs",
+      href: "/docs",
+    },
+    {
+      title: "Changelog",
+      href: "/changelog",
+    },
+  ];
+
   return (
     <div className="flex items-center justify-between py-6 lg:px-10 px-4">
-      <a href="" className="flex items-center gap-2">
+      <Link href="/" className="flex items-center gap-2">
         <img src="/logo.svg" alt="Logo" className="lg:w-12 w-10" />
-<small className="text-sm">Beta ✧･ﾟ</small>
-      </a>
-      <div className=""></div>
+        <small className="text-sm">Beta ✧･ﾟ</small>
+      </Link>
+
+      <div className="flex gap-5">
+        {links.map((link, i) => (
+          <Link
+            href={link.href}
+            key={i}
+            className="hover:text-accent transition-colors"
+          >
+            {link.title}
+          </Link>
+        ))}
+      </div>
       <div className="flex items-center gap-4">
         <Link
           href="https://beta.uploadfly.cloud/login"
