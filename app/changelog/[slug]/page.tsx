@@ -12,18 +12,16 @@ export async function generateStaticParams() {
   }));
 }
 
-export async function generateMetadata({
-  params,
-}: {
-  params: { slug: string };
-}): Promise<Metadata | undefined> {
-  const post = allChangelogPosts.find((post) => post.slug === params.slug);
-  if (!post) {
-    return;
-  }
-
-  const { title, summary: description } = post;
-}
+// export async function generateMetadata({
+//   params,
+// }: {
+//   params: { slug: string };
+// }): Promise<Metadata | undefined> {
+//   const post = allChangelogPosts.find((post) => post.slug === params.slug);
+//   if (!post) {
+//     return;
+//   }
+// }
 
 const ChangelogPost = ({ params }: { params: { slug: string } }) => {
   const post = allChangelogPosts.find(
