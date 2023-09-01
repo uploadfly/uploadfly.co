@@ -41,7 +41,7 @@ const Changelog = () => {
                   <Link href={post.url} className="hover:underline">
                     <h1 className="text-3xl font-bold">{post.title}</h1>
                   </Link>
-                  <div className="mt-5 text-lg">
+                  <div className="mt-5 text-lg content">
                     <MDX code={post.body.code} />
                   </div>
                 </div>

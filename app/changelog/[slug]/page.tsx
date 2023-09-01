@@ -49,7 +49,7 @@ const ChangelogPost = ({ params }: { params: { slug: string } }) => {
           <h1 className="text-white text-5xl text-center font-bold">
             {post.title}
           </h1>
-          <div className="mt-10 text-lg lg:w-[50%] px-4 mx-auto">
+          <div className="mt-10 text-lg lg:w-[50%] px-4 mx-auto content">
             <MDX code={post.body.code} />
           </div>
           <p className="text-xs font-semibold text-accent/80 mt-5">
