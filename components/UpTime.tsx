@@ -28,7 +28,7 @@ const UpTime = () => {
         state.phi = phi;
         phi += 0.01;
       },
-    });
+    }); 
 
     return () => {
       globe.destroy();
