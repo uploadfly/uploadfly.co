@@ -17,13 +17,23 @@ const Hero = () => {
           <BsArrowRightShort className="text-2xl ml-1 group-hover:translate-x-2 transition-all" />
         </div>
       </Link>
-      <h1 className="lg:text-7xl text-4xl font-bold text-center lg:w-[65%] w-[90%] mt-8">
+      <h1 className="lg:text-6xl text-4xl font-bold text-center lg:w-[65%] w-[90%] mt-8 px-4">
         Expovoluminously awesome file uploads.
       </h1>
-      <p className="my-5 lg:w-[60%] text-center lg:text-xl text-slate-200 w-[90%] text-lg">
-        Uploadfly makes it easy to add file uploads and optimization to websites
+      <p className="my-10 text-center text-slate-200 text-lg w-3/4 md:w-1/2 ">
+        Uploadfly makes it easy to add file uploads and 
+        <br className="hidden md:block"/>
+        optimization to websites
         and apps.
       </p>
+
+        <Link
+        href={"https://beta.uploadfly.cloud/signup"}
+        target="_blank"
+        className="bg-accent px-10 py-3 font-semibold text-lg rounded-full"
+      >
+        Get started
+      </Link>
     </div>
   );
 };
