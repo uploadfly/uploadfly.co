@@ -22,7 +22,7 @@ const Features = () => {
     <div className="flex items-center flex-col justify-center">
       <h1 className="shiny-text text-center text-3xl my-10 font-bold px-5 ">{`Bring your files, we'll handle the rest`}</h1>
       <div className="features-container w-full md:w-8/12 mx-auto">
-        <FeatureItem>
+        <FeatureItem >
           <div className="feature-icon col-span-1 flex items-center justify-center md:block">
             <img
               src="/config-icon.svg"
@@ -45,7 +45,17 @@ const Features = () => {
           </div>
         </FeatureItem>
 
+
         <FeatureItem className="gap-x-72">
+
+          <div className="feature-icon md:order-2 md:col-span-1 p-0 m-0 flex items-center justify-center md:block md:my-0 my-5">
+            <img
+              src="/ai-content.svg"
+              alt={"Ai detection image"}
+              className=""
+            />
+          </div>
+
           <div className="feature-content py-1 mt-4 md:order-1 md:col-span-2 ">
             <h2 className="feature-heading font-bold text-2xl my-5">
               AI content detection
@@ -58,17 +68,19 @@ const Features = () => {
             </p>
           </div>
 
-          <div className="feature-icon md:order-2 md:col-span-1 p-0 m-0 flex items-center justify-center md:block md:my-0 my-5">
+        </FeatureItem>
+
+        <FeatureItem className="block md:hidden">
+
+          <div className="feature-icons md:col-span-1 flex items-center justify-center md:block">
             <img
-              src="/ai-content.svg"
-              alt={"Ai detection image"}
+              src="/image-optimization.svg"
+              alt={"Image optimization"}
               className=""
             />
           </div>
-        </FeatureItem>
 
-        <FeatureItem className="block md:hidden w-full">
-          <div className="feature-content py-1 mt-4 md:col-span-2 ">
+           <div className="feature-content py-1 mt-4 md:order-1 md:col-span-2 ">
             <h2 className="feature-heading font-bold text-2xl my-5">
               Image optimization
             </h2>
@@ -82,13 +94,6 @@ const Features = () => {
             </p>
           </div>
 
-          <div className="feature-icons md:col-span-1 flex items-center justify-center md:block">
-            <img
-              src="/image-optimization.svg"
-              alt={"Image optimization"}
-              className=""
-            />
-          </div>
         </FeatureItem>
 
         <FeatureItem className="hidden md:grid w-full">
@@ -115,7 +120,7 @@ const Features = () => {
           </div>
         </FeatureItem>
 
-        <FeatureItem className="gap-x-40">
+        <FeatureItem className="hidden md:grid gap-x-40">
           <div className="feature-content py-1 mt-4 col-span-2">
             <h2 className="feature-heading font-bold text-2xl my-5">
               Image type conversion
@@ -139,6 +144,33 @@ const Features = () => {
           </div>
         </FeatureItem>
 
+
+        <FeatureItem className="block md:hidden">
+
+          <div className="feature-icon col-span-1 p-0 m-0 flex items-center justify-center md:block">
+            <img
+              src="/img-type-conversion.svg"
+              alt={"Image type conversion"}
+              className=""
+            />
+          </div>
+
+          <div className="feature-content py-1 mt-4 col-span-2">
+            <h2 className="feature-heading font-bold text-2xl my-5">
+              Image type conversion
+            </h2>
+            <p className="feature-description my-5">
+              Empower your content with flexibility and adaptability. With our
+              user-friendly platform, you can seamlessly convert images between
+              a variety of popular formats, including JPEG, PNG, GIF, and many
+              others. Transform your visuals effortlessly, ensuring they're
+              perfectly suited for your needs and enhancing the versatility of
+              your content.
+            </p>
+          </div>
+
+        </FeatureItem>
+
         <FeatureItem className="hidden md:grid">
           <div className="feature-icon col-span-1 flex items-center justify-center md:block">
             <img src="/filtering.svg" alt={"Image optimization"} className="" />
@@ -159,6 +191,11 @@ const Features = () => {
         </FeatureItem>
 
         <FeatureItem className="block md:hidden">
+
+          <div className="feature-icon col-span-1 flex items-center justify-center md:block">
+            <img src="/filtering.svg" alt={"Image optimization"} className="" />
+          </div>
+
           <div className="feature-content py-1 mt-4 col-span-2">
             <h2 className="feature-heading font-bold text-2xl my-5">
               Size and type filtering
@@ -172,12 +209,10 @@ const Features = () => {
             </p>
           </div>
 
-          <div className="feature-icon col-span-1 flex items-center justify-center md:block">
-            <img src="/filtering.svg" alt={"Image optimization"} className="" />
-          </div>
+     
         </FeatureItem>
 
-        <FeatureItem className="gap-x-40">
+        <FeatureItem className="hidden md:grid gap-x-40">
           <div className="feature-content py-1 mt-4 col-span-2">
             <h2 className="feature-heading font-bold text-2xl my-5">
               Content info
@@ -199,6 +234,33 @@ const Features = () => {
               className=""
             />
           </div>
+        </FeatureItem>
+
+
+         <FeatureItem className="block md:hidden gap-x-40">
+           <div className="feature-icon col-span-1 p-0 m-0 flex items-center justify-center md:block">
+            <img
+              src="/img-info.svg"
+              alt={"Image type conversion"}
+              className=""
+            />
+          </div>
+
+          <div className="feature-content py-1 mt-4 col-span-2">
+            <h2 className="feature-heading font-bold text-2xl my-5">
+              Content info
+            </h2>
+            <p className="feature-description my-5">
+              Unlock the hidden potential of your media files. Our advanced
+              technology allows you to extract valuable insights from your
+              assets, including MIME type, dimensions, file type, and a wealth
+              of other essential information. With these insights at your
+              fingertips, you can make informed decisions and optimize your
+              content
+            </p>
+          </div>
+
+        
         </FeatureItem>
       </div>
     </div>

@@ -17,7 +17,7 @@ const Hero = () => {
           <BsArrowRightShort className="text-2xl ml-1 group-hover:translate-x-2 transition-all" />
         </div>
       </Link>
-      <h1 className="lg:text-6xl text-4xl font-bold text-center lg:w-[65%] w-[90%] mt-8 px-4">
+      <h1 className="lg:text-6xl text-4xl font-bold text-center lg:w-[65%] w-[90%] mt-8">
         Expovoluminously awesome file uploads.
       </h1>
       <p className="my-10 text-center text-slate-200 text-lg w-3/4 md:w-1/2 ">
