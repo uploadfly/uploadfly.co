@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { BsImages } from "react-icons/bs";
 import { FaCreativeCommonsZero } from "react-icons/fa";
 import { TbInfoSquareFilled } from "react-icons/tb";
@@ -6,17 +7,33 @@ import { GiEyeTarget } from "react-icons/gi";
 import { HiFilter } from "react-icons/hi";
 import Image from "next/image";
 
+interface FeatureItemsProps{
+  className?: string;
+  featureHeading: string;
+  featureDescription: string;
+  featureIcon: string;
+  
+}
 
 const Features = () => {
 
-function FeatureItem({ className, featureHeading, featureDescription, featureIcon }) {
+function FeatureItem({
+  className,
+  featureHeading,
+  featureDescription,
+  featureIcon,
+}: FeatureItemsProps) {
   return (
-    <div className={`feature shadow-[#FFB08E] shadow transform-gpu transition-transform ease-in-out duration-300 md:hover:scale-[1.1]  hover:cursor-pointer rounded-lg md:w-auto xl:w-[26rem] p-2 py-5 flex flex-col items-center px-5 my-8 mx-3  md:mx-5 ${className}`}>
+    <div
+      className={`feature shadow-[#FFB08E] shadow transform-gpu transition-transform ease-in-out duration-300 md:hover:scale-[1.1]  hover:cursor-pointer rounded-lg md:w-auto xl:w-[26rem] p-2 py-5 flex flex-col items-center px-5 my-8 mx-3  md:mx-5 ${className}`}
+    >
       <div className="feature-icon">
         <img src={featureIcon} alt={featureHeading} className="w-48 h-48" />
       </div>
       <div className="feature-content py-1 mt-4">
-        <h2 className="feature-heading font-bold text-xl my-1">{featureHeading}</h2>
+        <h2 className="feature-heading font-bold text-xl my-1">
+          {featureHeading}
+        </h2>
         <p className="feature-description">{featureDescription}</p>
       </div>
     </div>

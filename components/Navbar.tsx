@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import { IoClose } from "react-icons/io5";
 
 const Navbar = () => {
