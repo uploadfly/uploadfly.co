@@ -24,7 +24,6 @@ body {
   animation: shine 2s linear infinite alternate;
   border-style: none;
   color: #ededed;
-  font-weight: 500;
   -webkit-mask-image: linear-gradient(
     -75deg,
     rgba(0, 0, 0, 0.6) 30%,
