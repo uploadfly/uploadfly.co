@@ -36,14 +36,24 @@ const UpTime = () => {
   }, []);
   return (
     <div className="my-20 flex items-center flex-col">
-      <Balancer className="shiny-text text-center text-4xl px-5">
+    <br/><br/>
+      <Balancer className="shiny-text text-center text-4xl font-bold px-5 my-5">
         99.99999999999% up time
       </Balancer>
       <p className="text-slate-200 text-center text-xl lg:w-[50%] w-[90%] mx-auto mt-3">
-        Delivery through 450+ global CDN locations ensuring consistent and rapid
-        content delivery for your users anytime, anywhere.
+       
       </p>
-      <div className="flex items-center justify-center">
+
+       <p className="my-10 text-center text-slate-200 text-lg w-4/4 px-2 md:w-1/2 ">
+           Delivery through 450+ global CDN locations ensuring consistent and rapid
+          <br className="hidden md:block"/>
+            content delivery for your users anytime, anywhere.
+       </p>
+
+
+      <div className="flex ite
+
+      ms-center justify-center">
         <canvas
           ref={canvasRef}
           style={{ width: 600, height: 600, maxWidth: "100%", aspectRatio: 1 }}
