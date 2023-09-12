@@ -1,57 +1,206 @@
+/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable @next/next/no-img-element */
-import { BsImages } from "react-icons/bs";
-import { FaCreativeCommonsZero } from "react-icons/fa";
-import { TbInfoSquareFilled } from "react-icons/tb";
-import { PiSwapBold } from "react-icons/pi";
-import { GiEyeTarget } from "react-icons/gi";
-import { HiFilter } from "react-icons/hi";
-import Image from "next/image";
+// eslint-disable-next-line react/no-unescaped-entities
 
-interface FeatureItemsProps{
+interface FeatureItemsProps {
   className?: string;
-  featureHeading: string;
-  featureDescription: string;
-  featureIcon: string;
-  
+  children: React.ReactNode;
 }
 
 const Features = () => {
-
-function FeatureItem({
-  className,
-  featureHeading,
-  featureDescription,
-  featureIcon,
-}: FeatureItemsProps) {
-  return (
-    <div
-      className={`feature shadow-[#FFB08E] shadow transform-gpu transition-transform ease-in-out duration-300 md:hover:scale-[1.1]  hover:cursor-pointer rounded-lg md:w-auto xl:w-[26rem] p-2 py-5 flex flex-col items-center px-5 my-8 mx-3  md:mx-5 ${className}`}
-    >
-      <div className="feature-icon">
-        <img src={featureIcon} alt={featureHeading} className="w-48 h-48" />
+  function FeatureItem({ className, children }: FeatureItemsProps) {
+    return (
+      <div
+        className={`feature w-11/12 md:w-full mx-auto  md:grid grid-cols-3 p-5 my-28 ${className}`}
+      >
+        {children}
       </div>
-      <div className="feature-content py-1 mt-4">
-        <h2 className="feature-heading font-bold text-xl my-1">
-          {featureHeading}
-        </h2>
-        <p className="feature-description">{featureDescription}</p>
-      </div>
-    </div>
-  );
-}
+    );
+  }
 
   return (
     <div className="flex items-center flex-col justify-center">
-
       <h1 className="shiny-text text-center text-3xl my-10 font-bold px-5 ">{`Bring your files, we'll handle the rest`}</h1>
-        <div className="features-container grid lg:grid-cols-3 gap-4 p-2 ">
-          <FeatureItem className="transform lg:translate-y-16" featureHeading="Image optimization" featureDescription="Improve user experience by reducing image size by up to 80%." featureIcon="/image-optimization.svg"/>
-          <FeatureItem className="" featureHeading="Zero config" featureDescription="Just your file and your API key. No configs, no buckets, no bs." featureIcon="/config-icon.svg"/>
-          <FeatureItem className="lg:transform lg:translate-y-16" featureHeading="Size and type filtering" featureDescription="Specify filters to include or exclude images based on their size, dimensions or file formats." featureIcon="/filtering.svg"/>
-          <FeatureItem className="lg:transform lg:translate-y-20" featureHeading="Content info" featureDescription="Extract valuable insights from media files such as MIME type, demensions, file type and more." featureIcon="/img-info.svg"/>
-          <FeatureItem className="" featureHeading="Image type conversion" featureDescription="Easily transform images between popular formats like JPEG, PNG, GIF, or others." featureIcon="/img-type-conversion.svg"/>
-          <FeatureItem className="lg:transform lg:translate-y-20" featureHeading="AI content detection" featureDescription="Filter out potentially objectionable or unsafe images using AI." featureIcon="/ai-content.svg"/>
-        </div>
+      <div className="features-container w-full md:w-8/12 mx-auto">
+        <FeatureItem>
+          <div className="feature-icon col-span-1 flex items-center justify-center md:block">
+            <img
+              src="/config-icon.svg"
+              alt={"Zero config image"}
+              className=""
+            />
+          </div>
+
+          <div className="feature-content py-1 mt-4 col-span-2">
+            <h2 className="feature-heading font-bold text-2xl my-5">
+              Zero configuration
+            </h2>
+            <p className="feature-description my-5">
+              With just your file and your API key, we empower developers to
+              effortlessly streamline their workflow. Say goodbye to the
+              intricacies of complex configurations, the headache of managing
+              multiple storage buckets, and the frustration of unnecessary
+              complications
+            </p>
+          </div>
+        </FeatureItem>
+
+        <FeatureItem className="gap-x-72">
+          <div className="feature-content py-1 mt-4 md:order-1 md:col-span-2 ">
+            <h2 className="feature-heading font-bold text-2xl my-5">
+              AI content detection
+            </h2>
+            <p className="feature-description my-5">
+              Secure and streamline your content with Uploadfly's AI-powered
+              image filtering. Our robust system is designed to proactively
+              identify and remove potentially objectionable or unsafe images,
+              ensuring a clean and welcoming environment for your content.
+            </p>
+          </div>
+
+          <div className="feature-icon md:order-2 md:col-span-1 p-0 m-0 flex items-center justify-center md:block md:my-0 my-5">
+            <img
+              src="/ai-content.svg"
+              alt={"Ai detection image"}
+              className=""
+            />
+          </div>
+        </FeatureItem>
+
+        <FeatureItem className="block md:hidden w-full">
+          <div className="feature-content py-1 mt-4 md:col-span-2 ">
+            <h2 className="feature-heading font-bold text-2xl my-5">
+              Image optimization
+            </h2>
+            <p className="feature-description my-5">
+              Enhance user satisfaction with lightning-fast loading times. Our
+              cutting-edge technology can drastically reduce image sizes by up
+              to 80%, leading to quicker page load speeds and improved user
+              experience. Say goodbye to sluggish loading times and hello to a
+              responsive and engaging website that keeps your audience coming
+              back for more
+            </p>
+          </div>
+
+          <div className="feature-icons md:col-span-1 flex items-center justify-center md:block">
+            <img
+              src="/image-optimization.svg"
+              alt={"Image optimization"}
+              className=""
+            />
+          </div>
+        </FeatureItem>
+
+        <FeatureItem className="hidden md:grid w-full">
+          <div className="feature-icons md:col-span-1 flex items-center justify-center md:block">
+            <img
+              src="/image-optimization.svg"
+              alt={"Image optimization"}
+              className=""
+            />
+          </div>
+
+          <div className="feature-content py-1 mt-4 md:col-span-2 ">
+            <h2 className="feature-heading font-bold text-2xl my-5">
+              Image optimization
+            </h2>
+            <p className="feature-description my-5">
+              Enhance user satisfaction with lightning-fast loading times. Our
+              cutting-edge technology can drastically reduce image sizes by up
+              to 80%, leading to quicker page load speeds and improved user
+              experience. Say goodbye to sluggish loading times and hello to a
+              responsive and engaging website that keeps your audience coming
+              back for more
+            </p>
+          </div>
+        </FeatureItem>
+
+        <FeatureItem className="gap-x-40">
+          <div className="feature-content py-1 mt-4 col-span-2">
+            <h2 className="feature-heading font-bold text-2xl my-5">
+              Image type conversion
+            </h2>
+            <p className="feature-description my-5">
+              Empower your content with flexibility and adaptability. With our
+              user-friendly platform, you can seamlessly convert images between
+              a variety of popular formats, including JPEG, PNG, GIF, and many
+              others. Transform your visuals effortlessly, ensuring they're
+              perfectly suited for your needs and enhancing the versatility of
+              your content.
+            </p>
+          </div>
+
+          <div className="feature-icon col-span-1 p-0 m-0 flex items-center justify-center md:block">
+            <img
+              src="/img-type-conversion.svg"
+              alt={"Image type conversion"}
+              className=""
+            />
+          </div>
+        </FeatureItem>
+
+        <FeatureItem className="hidden md:grid">
+          <div className="feature-icon col-span-1 flex items-center justify-center md:block">
+            <img src="/filtering.svg" alt={"Image optimization"} className="" />
+          </div>
+
+          <div className="feature-content py-1 mt-4 col-span-2">
+            <h2 className="feature-heading font-bold text-2xl my-5">
+              Size and type filtering
+            </h2>
+            <p className="feature-description my-5">
+              Take control of your image selection with precision. Customize
+              your filtering criteria to include or exclude images based on
+              their size, dimensions, or file formats. Whether you're curating
+              content or optimizing file management, our platform puts the power
+              in your hands to achieve the exact results you desire
+            </p>
+          </div>
+        </FeatureItem>
+
+        <FeatureItem className="block md:hidden">
+          <div className="feature-content py-1 mt-4 col-span-2">
+            <h2 className="feature-heading font-bold text-2xl my-5">
+              Size and type filtering
+            </h2>
+            <p className="feature-description my-5">
+              Take control of your image selection with precision. Customize
+              your filtering criteria to include or exclude images based on
+              their size, dimensions, or file formats. Whether you're curating
+              content or optimizing file management, our platform puts the power
+              in your hands to achieve the exact results you desire
+            </p>
+          </div>
+
+          <div className="feature-icon col-span-1 flex items-center justify-center md:block">
+            <img src="/filtering.svg" alt={"Image optimization"} className="" />
+          </div>
+        </FeatureItem>
+
+        <FeatureItem className="gap-x-40">
+          <div className="feature-content py-1 mt-4 col-span-2">
+            <h2 className="feature-heading font-bold text-2xl my-5">
+              Content info
+            </h2>
+            <p className="feature-description my-5">
+              Unlock the hidden potential of your media files. Our advanced
+              technology allows you to extract valuable insights from your
+              assets, including MIME type, dimensions, file type, and a wealth
+              of other essential information. With these insights at your
+              fingertips, you can make informed decisions and optimize your
+              content
+            </p>
+          </div>
+
+          <div className="feature-icon col-span-1 p-0 m-0 flex items-center justify-center md:block">
+            <img
+              src="/img-info.svg"
+              alt={"Image type conversion"}
+              className=""
+            />
+          </div>
+        </FeatureItem>
+      </div>
     </div>
   );
 };
