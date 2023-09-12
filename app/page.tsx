@@ -12,7 +12,7 @@ export default function Home() {
       <div
         style={{
           backgroundImage:
-            "linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(/grid-bg.png)",
+            "linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(/backdrop.svg)",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
