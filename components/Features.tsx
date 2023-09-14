@@ -11,7 +11,7 @@ const Features = () => {
   function FeatureItem({ className, children }: FeatureItemsProps) {
     return (
       <div
-        className={`feature w-full md:w-full mx-auto  md:grid grid-cols-3 p-5 my-28 ${className}`}
+        className={`feature w-full md:w-full mx-auto lg:grid grid-cols-3 p-5 my-28  ${className}`}
       >
         {children}
       </div>
@@ -21,9 +21,9 @@ const Features = () => {
   return (
     <div className="flex items-center flex-col justify-center">
       <h1 className="shiny-text text-center text-3xl my-10 font-bold px-5 ">{`Bring your files, we'll handle the rest`}</h1>
-      <div className="features-container w-full md:w-8/12 mx-auto">
+      <div className="features-container w-full md:w-10/12 xl:w-8/12 mx-auto">
         <FeatureItem>
-          <div className="feature-icon col-span-1 flex items-center justify-center md:block">
+          <div className="feature-icon col-span-1 flex items-center justify-center lg:block">
             <img
               src="/config-icon.svg"
               alt={"Zero config image"}
@@ -32,7 +32,7 @@ const Features = () => {
           </div>
 
           <div className="feature-content py-1 mt-4 col-span-2">
-            <h2 className="feature-heading font-bold text-3xl md:text-4xl capitalize my-5">
+            <h2 className="feature-heading font-bold text-3xl md:text-4xl capitalize mt-2">
               Zero configuration
             </h2>
             <p className="feature-description text-[20px] my-5">
@@ -45,17 +45,17 @@ const Features = () => {
           </div>
         </FeatureItem>
 
-        <FeatureItem className="gap-x-72">
-          <div className="feature-icon md:order-2 md:col-span-1 p-0 m-0 flex items-center justify-center md:block md:my-0 my-5">
+        <FeatureItem className="">
+          <div className="feature-icon md:order-2 md:col-span-1 w-full  p-0 m-0 flex items-center justify-center lg:justify-end  md:my-0 my-5">
             <img
               src="/ai-content.svg"
               alt={"Ai detection image"}
-              className=""
+              className="p-0 m-0"
             />
           </div>
 
           <div className="feature-content py-1 mt-4 md:order-1 md:col-span-2 ">
-            <h2 className="feature-heading font-bold text-3xl md:text-4xl capitalize my-5">
+            <h2 className="feature-heading font-bold text-3xl md:text-4xl capitalize mt-2">
               AI content detection
             </h2>
             <p className="feature-description text-[20px] my-5">
@@ -67,8 +67,8 @@ const Features = () => {
           </div>
         </FeatureItem>
 
-        <FeatureItem className="block md:hidden">
-          <div className="feature-icons md:col-span-1 flex items-center justify-center md:block">
+        <FeatureItem className="block lg:hidden">
+          <div className="feature-icons md:col-span-1 flex items-center justify-center lg:block">
             <img
               src="/image-optimization.svg"
               alt={"Image optimization"}
@@ -77,7 +77,7 @@ const Features = () => {
           </div>
 
           <div className="feature-content py-1 mt-4 md:order-1 md:col-span-2 ">
-            <h2 className="feature-heading font-bold text-3xl md:text-4xl capitalize my-5">
+            <h2 className="feature-heading font-bold text-3xl md:text-4xl capitalize mt-5">
               Image optimization
             </h2>
             <p className="feature-description text-[20px] my-5">
@@ -91,8 +91,8 @@ const Features = () => {
           </div>
         </FeatureItem>
 
-        <FeatureItem className="hidden md:grid w-full">
-          <div className="feature-icons md:col-span-1 flex items-center justify-center md:block">
+        <FeatureItem className="hidden lg:grid w-full">
+          <div className="feature-icons md:col-span-1 flex items-center justify-center lg:block">
             <img
               src="/image-optimization.svg"
               alt={"Image optimization"}
@@ -101,7 +101,7 @@ const Features = () => {
           </div>
 
           <div className="feature-content py-1 mt-4 md:col-span-2 ">
-            <h2 className="feature-heading font-bold text-3xl md:text-4xl capitalize my-5">
+            <h2 className="feature-heading font-bold text-3xl md:text-4xl capitalize mt-2">
               Image optimization
             </h2>
             <p className="feature-description text-[20px] my-5">
@@ -115,9 +115,9 @@ const Features = () => {
           </div>
         </FeatureItem>
 
-        <FeatureItem className="hidden md:grid gap-x-40">
+        <FeatureItem className="hidden lg:grid ">
           <div className="feature-content py-1 mt-4 col-span-2">
-            <h2 className="feature-heading font-bold text-3xl md:text-4xl capitalize my-5">
+            <h2 className="feature-heading font-bold text-3xl md:text-4xl capitalize mt-2">
               Image type conversion
             </h2>
             <p className="feature-description text-[20px] my-5">
@@ -130,7 +130,8 @@ const Features = () => {
             </p>
           </div>
 
-          <div className="feature-icon col-span-1 p-0 m-0 flex items-center justify-center md:block">
+        <div className="feature-icon md:order-2 md:col-span-1 w-full  p-0 m-0 flex items-center justify-center lg:justify-end  md:my-0 my-5">
+
             <img
               src="/img-type-conversion.svg"
               alt={"Image type conversion"}
@@ -139,8 +140,8 @@ const Features = () => {
           </div>
         </FeatureItem>
 
-        <FeatureItem className="block md:hidden">
-          <div className="feature-icon col-span-1 p-0 m-0 flex items-center justify-center md:block">
+        <FeatureItem className="block lg:hidden">
+          <div className="feature-icon col-span-1 p-0 m-0 flex items-center justify-center lg:block">
             <img
               src="/img-type-conversion.svg"
               alt={"Image type conversion"}
@@ -149,7 +150,7 @@ const Features = () => {
           </div>
 
           <div className="feature-content py-1 mt-4 col-span-2">
-            <h2 className="feature-heading font-bold text-3xl md:text-4xl capitalize my-5">
+            <h2 className="feature-heading font-bold text-3xl md:text-4xl capitalize mt-5">
               Image type conversion
             </h2>
             <p className="feature-description text-[20px] my-5">
@@ -163,13 +164,13 @@ const Features = () => {
           </div>
         </FeatureItem>
 
-        <FeatureItem className="hidden md:grid">
-          <div className="feature-icon col-span-1 flex items-center justify-center md:block">
+        <FeatureItem className="hidden lg:grid">
+          <div className="feature-icon col-span-1 flex items-center justify-center lg:block">
             <img src="/filtering.svg" alt={"Image optimization"} className="" />
           </div>
 
           <div className="feature-content py-1 mt-4 col-span-2">
-            <h2 className="feature-heading font-bold text-3xl md:text-4xl capitalize my-5">
+            <h2 className="feature-heading font-bold text-3xl md:text-4xl capitalize mt-2">
               Size and type filtering
             </h2>
             <p className="feature-description text-[20px] my-5">
@@ -182,13 +183,13 @@ const Features = () => {
           </div>
         </FeatureItem>
 
-        <FeatureItem className="block md:hidden">
-          <div className="feature-icon col-span-1 flex items-center justify-center md:block">
+        <FeatureItem className="block lg:hidden">
+          <div className="feature-icon col-span-1 flex items-center justify-center lg:block">
             <img src="/filtering.svg" alt={"Image optimization"} className="" />
           </div>
 
           <div className="feature-content py-1 mt-4 col-span-2">
-            <h2 className="feature-heading font-bold text-3xl md:text-4xl capitalize my-5">
+            <h2 className="feature-heading font-bold text-3xl md:text-4xl capitalize mt-5">
               Size and type filtering
             </h2>
             <p className="feature-description text-[20px] my-5">
@@ -201,9 +202,9 @@ const Features = () => {
           </div>
         </FeatureItem>
 
-        <FeatureItem className="hidden md:grid gap-x-40">
+        <FeatureItem className="hidden lg:grid ">
           <div className="feature-content py-1 mt-4 col-span-2">
-            <h2 className="feature-heading font-bold text-3xl md:text-4xl capitalize my-5">
+            <h2 className="feature-heading font-bold text-3xl md:text-4xl capitalize mt-2">
               Content info
             </h2>
             <p className="feature-description text-[20px] my-5">
@@ -216,7 +217,7 @@ const Features = () => {
             </p>
           </div>
 
-          <div className="feature-icon col-span-1 p-0 m-0 flex items-center justify-center md:block">
+          <div className="feature-icon md:order-2 md:col-span-1 w-full  p-0 m-0 flex items-center justify-center lg:justify-end  md:my-0 my-5">
             <img
               src="/img-info.svg"
               alt={"Image type conversion"}
@@ -225,8 +226,8 @@ const Features = () => {
           </div>
         </FeatureItem>
 
-        <FeatureItem className="block md:hidden gap-x-40">
-          <div className="feature-icon col-span-1 p-0 m-0 flex items-center justify-center md:block">
+        <FeatureItem className="block lg:hidden ">
+          <div className="feature-icon col-span-1 p-0 m-0 flex items-center justify-center lg:block">
             <img
               src="/img-info.svg"
               alt={"Image type conversion"}
@@ -235,7 +236,7 @@ const Features = () => {
           </div>
 
           <div className="feature-content py-1 mt-4 col-span-2">
-            <h2 className="feature-heading font-bold text-3xl md:text-4xl capitalize my-5">
+            <h2 className="feature-heading font-bold text-3xl md:text-4xl capitalize mt-5">
               Content info
             </h2>
             <p className="feature-description text-[20px] my-5">
