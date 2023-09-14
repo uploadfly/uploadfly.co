@@ -35,7 +35,7 @@ const Features = () => {
             <h2 className="feature-heading font-bold text-3xl md:text-4xl capitalize my-5">
               Zero configuration
             </h2>
-            <p className="feature-description my-5">
+            <p className="feature-description text-[20px] my-5">
               With just your file and your API key, we empower developers to
               effortlessly streamline their workflow. Say goodbye to the
               intricacies of complex configurations, the headache of managing
@@ -58,7 +58,7 @@ const Features = () => {
             <h2 className="feature-heading font-bold text-3xl md:text-4xl capitalize my-5">
               AI content detection
             </h2>
-            <p className="feature-description my-5">
+            <p className="feature-description text-[20px] my-5">
               Secure and streamline your content with Uploadfly's AI-powered
               image filtering. Our robust system is designed to proactively
               identify and remove potentially objectionable or unsafe images,
@@ -80,7 +80,7 @@ const Features = () => {
             <h2 className="feature-heading font-bold text-3xl md:text-4xl capitalize my-5">
               Image optimization
             </h2>
-            <p className="feature-description my-5">
+            <p className="feature-description text-[20px] my-5">
               Enhance user satisfaction with lightning-fast loading times. Our
               cutting-edge technology can drastically reduce image sizes by up
               to 80%, leading to quicker page load speeds and improved user
@@ -104,7 +104,7 @@ const Features = () => {
             <h2 className="feature-heading font-bold text-3xl md:text-4xl capitalize my-5">
               Image optimization
             </h2>
-            <p className="feature-description my-5">
+            <p className="feature-description text-[20px] my-5">
               Enhance user satisfaction with lightning-fast loading times. Our
               cutting-edge technology can drastically reduce image sizes by up
               to 80%, leading to quicker page load speeds and improved user
@@ -120,7 +120,7 @@ const Features = () => {
             <h2 className="feature-heading font-bold text-3xl md:text-4xl capitalize my-5">
               Image type conversion
             </h2>
-            <p className="feature-description my-5">
+            <p className="feature-description text-[20px] my-5">
               Empower your content with flexibility and adaptability. With our
               user-friendly platform, you can seamlessly convert images between
               a variety of popular formats, including JPEG, PNG, GIF, and many
@@ -152,7 +152,7 @@ const Features = () => {
             <h2 className="feature-heading font-bold text-3xl md:text-4xl capitalize my-5">
               Image type conversion
             </h2>
-            <p className="feature-description my-5">
+            <p className="feature-description text-[20px] my-5">
               Empower your content with flexibility and adaptability. With our
               user-friendly platform, you can seamlessly convert images between
               a variety of popular formats, including JPEG, PNG, GIF, and many
@@ -172,7 +172,7 @@ const Features = () => {
             <h2 className="feature-heading font-bold text-3xl md:text-4xl capitalize my-5">
               Size and type filtering
             </h2>
-            <p className="feature-description my-5">
+            <p className="feature-description text-[20px] my-5">
               Take control of your image selection with precision. Customize
               your filtering criteria to include or exclude images based on
               their size, dimensions, or file formats. Whether you're curating
@@ -191,7 +191,7 @@ const Features = () => {
             <h2 className="feature-heading font-bold text-3xl md:text-4xl capitalize my-5">
               Size and type filtering
             </h2>
-            <p className="feature-description my-5">
+            <p className="feature-description text-[20px] my-5">
               Take control of your image selection with precision. Customize
               your filtering criteria to include or exclude images based on
               their size, dimensions, or file formats. Whether you're curating
@@ -206,7 +206,7 @@ const Features = () => {
             <h2 className="feature-heading font-bold text-3xl md:text-4xl capitalize my-5">
               Content info
             </h2>
-            <p className="feature-description my-5">
+            <p className="feature-description text-[20px] my-5">
               Unlock the hidden potential of your media files. Our advanced
               technology allows you to extract valuable insights from your
               assets, including MIME type, dimensions, file type, and a wealth
@@ -238,7 +238,7 @@ const Features = () => {
             <h2 className="feature-heading font-bold text-3xl md:text-4xl capitalize my-5">
               Content info
             </h2>
-            <p className="feature-description my-5">
+            <p className="feature-description text-[20px] my-5">
               Unlock the hidden potential of your media files. Our advanced
               technology allows you to extract valuable insights from your
               assets, including MIME type, dimensions, file type, and a wealth
