@@ -13,6 +13,10 @@ const Navbar = () => {
       href: "/docs",
     },
     {
+      title: "Pricing",
+      href: "/pricing",
+    },
+    {
       title: "Changelog",
       href: "/changelog",
     },
