@@ -19,6 +19,7 @@ function Pricing() {
         "2 projects",
         "15,000 monthly uploads",
         "50 MB max upload size",
+        "Email support",
       ],
     },
     {
@@ -30,6 +31,7 @@ function Pricing() {
         "10 projects",
         "100,000 monthly uploads",
         "1 GB max upload size",
+        "Email support",
       ],
       isHighlighted: true,
     },
@@ -41,8 +43,33 @@ function Pricing() {
       features: [
         "400 GB of storage",
         "100 projects",
-        "1000,000 monthly uploads",
+        "1,000,000 monthly uploads",
         "150 GB max upload size",
+        "Priority Email support",
+      ],
+    },
+    {
+      name: "Free",
+      price: 0,
+      description: "For developers building open source projects.",
+      features: [
+        "2GB storage",
+        "2 projects",
+        "1,000 monthly uploads",
+        "25MB max upload size",
+        "Email and private Slack support",
+      ],
+    },
+    {
+      name: "Enterprise",
+      // price: 0,
+      description: "Fully tailored for your business.",
+      features: [
+        "Unlimited storage",
+        "Unlimited projects",
+        "Unlimited monthly uploads",
+        "Unlimited upload size",
+        "Dedicated support engineer",
       ],
     },
   ];
@@ -53,17 +80,22 @@ function Pricing() {
       <div className="mt-10">
         <h1 className="text-5xl text-center font-bold">Pricing</h1>
         <p className="text-center text-gray-400 mt-5 mb-10 text-lg px-10">
-          Choose the plan that&apos;s right for you and start managing your
-          projects. No credit card required.
+          Choose what works for you. Get on the cloud.
         </p>
-        <div className="w-full max-w-[1000px] mx-auto">
-          <div className="grid lg:grid-cols-3 grid-cols-1 gap-10 mb-5 px-5 w-full">
+        <div className="w-full max-w-[1100px] mx-auto">
+          <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-10 mb-5 px-5 w-full">
             {tiers.map((tier) => (
               <div
                 key={tier.name}
-                className={`border-2 relative flex flex-col w-full rounded-lg p-5 ${
+                className={`border-2 relative flex flex-col rounded-3xl p-5 ${
                   tier.isHighlighted ? "border-accent" : "border-white/20"
-                }`}
+                } ${tier.name === "Free" ? "lg:col-span-2" : ""}
+                ${
+                  tier.name === "Enterprise"
+                    ? "sm:col-span-2 lg:col-span-1"
+                    : ""
+                }
+                `}
               >
                 {tier.isHighlighted && (
                   <div
@@ -74,13 +106,25 @@ function Pricing() {
                   </div>
                 )}
                 <h2 className="text-xl font-bold">{tier.name}</h2>
-                <p className="text-base text-gray-400">{tier.description}</p>
-                <h1 className="mt-3 font-semibold text-gray-400">
-                  <span className="font-normal text-4xl text-white">
-                    ${tier.price}
-                  </span>
-                  /month/project
-                </h1>
+                {tier.name !== "Enterprise" && (
+                  <p className="text-sm text-gray-400 mt-2">
+                    {tier.description}
+                  </p>
+                )}
+                {tier.name !== "Enterprise" && (
+                  <h1 className="mt-3 font-semibold text-gray-400">
+                    <span className="font-normal text-4xl text-white">
+                      ${tier.price}
+                    </span>
+                    /month/project
+                  </h1>
+                )}
+                {tier.name === "Enterprise" && (
+                  <p className="mt-4 text-lg text-gray-400">
+                    Contact us for a custom quote that matches your business
+                    needs.
+                  </p>
+                )}
                 <div className="mt-2">
                   {tier.features.map((feature) => (
                     <div key={feature} className="mt-5">
@@ -98,7 +142,6 @@ function Pricing() {
               </div>
             ))}
           </div>
-          <div className="flex gap-10 w-full mx-auto"></div>
         </div>
       </div>
     </div>
