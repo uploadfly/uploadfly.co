@@ -21,7 +21,7 @@ function PricingButton({
       } py-3 px-5 rounded-full transition-colors font-semibold flex items-center justify-center`}
       onClick={() => plausible("Pricing Clicked", { props: tier })}
     >
-      Get started
+      {tier === "Enterprise" ? "Contact Us" : "Get Started"}
     </Link>
   );
 }
