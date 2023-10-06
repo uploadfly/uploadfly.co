@@ -34,7 +34,7 @@ const Navbar = () => {
           <small className="text-sm">Beta ✧･ﾟ</small>
         </Link>
 
-        <div className="hidden lg:flex gap-5">
+        <div className="hidden lg:flex gap-10">
           {links.map((link, i) => (
             <Link
               href={link.href}
