@@ -12,7 +12,11 @@ function PricingButton({
   const plausible = usePlausible();
   return (
     <Link
-      href="https://beta.uploadfly.co/signup"
+      href={
+        tier === "Enterprise"
+          ? "https://cal.com/akinkunmi/uploadfly-for-enterprise"
+          : "https://beta.uploadfly.co/signup"
+      }
       target="_blank"
       className={`mt-10 ${
         isHighlighted
