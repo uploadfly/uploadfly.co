@@ -15,10 +15,9 @@ function Pricing() {
       price: 7,
       description: "For small apps and hobby projects.",
       features: [
-        "2 GB of storage",
-        "2 projects",
+        "20 GB of storage",
         "15,000 monthly uploads",
-        "50 MB max upload size",
+        "100 MB max upload size",
         "Email support",
       ],
     },
@@ -28,7 +27,6 @@ function Pricing() {
       description: "For startups building production apps.",
       features: [
         "100 GB of storage",
-        "10 projects",
         "100,000 monthly uploads",
         "1 GB max upload size",
         "Email support",
@@ -42,10 +40,9 @@ function Pricing() {
       description: "For teams building at scale.",
       features: [
         "400 GB of storage",
-        "100 projects",
         "1,000,000 monthly uploads",
         "150 GB max upload size",
-        "Priority Email support",
+        "Email and private Slack support",
       ],
     },
     {
@@ -54,10 +51,9 @@ function Pricing() {
       description: "For developers building open source projects.",
       features: [
         "2GB storage",
-        "2 projects",
         "1,000 monthly uploads",
         "25MB max upload size",
-        "Email and private Slack support",
+        "Support as available",
       ],
     },
     {
@@ -66,7 +62,6 @@ function Pricing() {
       description: "Fully tailored for your business.",
       features: [
         "Unlimited storage",
-        "Unlimited projects",
         "Unlimited monthly uploads",
         "Unlimited upload size",
         "Dedicated support engineer",
