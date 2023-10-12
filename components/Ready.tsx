@@ -12,7 +12,7 @@ const Ready = () => {
       }}
     >
       <h1 className="text-6xl lg:w-[50%] mb-5 text-center font-semibold">
-        Start uploading with Uploadfly today.
+        Start uploading with UploadFly today.
       </h1>
 
       <Link

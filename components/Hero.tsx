@@ -21,7 +21,7 @@ const Hero = () => {
         Expovoluminously awesome file uploads.
       </h1>
       <p className="my-5 lg:w-[60%] text-center lg:text-xl text-slate-200 w-[90%] text-lg">
-        Uploadfly makes it easy to add file uploads and optimization to websites
+        UploadFly makes it easy to add file uploads and optimization to websites
         and apps.
       </p>
     </div>
