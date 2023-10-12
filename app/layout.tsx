@@ -13,7 +13,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <PlausibleProvider domain="uploadfly.cloud" trackOutboundLinks={true}>
+    <PlausibleProvider domain="uploadfly.co" trackOutboundLinks={true}>
       <html lang="en">
         <meta
           property="og:image"
