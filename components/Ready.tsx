@@ -16,7 +16,7 @@ const Ready = () => {
       </h1>
 
       <Link
-        href={"https://beta.uploadfly.cloud/signup"}
+        href={"https://beta.uploadfly.co/signup"}
         target="_blank"
         className="bg-accent px-10 py-3 font-semibold text-lg rounded-full"
       >
