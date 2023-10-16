@@ -49,14 +49,14 @@ const Navbar = () => {
         </div>
         <div className="hidden lg:flex items-center gap-4">
           <Link
-            href="https://beta.uploadfly.cloud/login"
+            href="https://beta.uploadfly.co/login"
             target="_blank"
             className="font-semibold hover:text-accent transition-colors"
           >
             Login
           </Link>
           <Link
-            href="https://beta.uploadfly.cloud/signup"
+            href="https://beta.uploadfly.co/signup"
             target="_blank"
             className="px-5 py-2 font-semibold rounded-full bg-accent hover:translate-y-1 transition-all"
           >
@@ -92,14 +92,14 @@ const Navbar = () => {
             </Link>
           ))}
           <Link
-            href="https://beta.uploadfly.cloud/login"
+            href="https://beta.uploadfly.co/login"
             target="_blank"
             className="font-semibold border-b border-accent/50 w-full pl-5 pb-1"
           >
             Login
           </Link>
           <Link
-            href="https://beta.uploadfly.cloud/signup"
+            href="https://beta.uploadfly.co/signup"
             target="_blank"
             className="px-5 py-3 font-semibold rounded-full bg-accent w-[80%] mx-auto text-center"
           >
