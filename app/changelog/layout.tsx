@@ -1,7 +1,7 @@
 import Footer from "@/components/Footer";
 
 export const metadata = {
-  title: "Changelog  • Uploadfly",
+  title: "Changelog  • UploadFly",
 };
 
 const ChangelogLayout = ({ children }: { children: React.ReactNode }) => {

@@ -2,9 +2,9 @@ import "./globals.css";
 import PlausibleProvider from "next-plausible";
 
 export const metadata = {
-  title: "Uploadfly • Really simple file uploads",
+  title: "UploadFly • Really simple file uploads",
   description:
-    "Uploadfly makes it easy to add file uploads to your applications.",
+    "UploadFly makes it easy to add file uploads to your applications.",
 };
 
 export default function RootLayout({

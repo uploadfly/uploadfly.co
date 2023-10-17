@@ -19,7 +19,7 @@ const Changelog = () => {
         }}
       >
         <h1 className="text-white text-6xl font-bold">Changelog</h1>
-        <p>All the new stuff with Uploadfly...</p>
+        <p>All the new stuff with UploadFly...</p>
       </div>
       <div className="flex items-center flex-col lg:w-[60%] px-7 mx-auto my-10 gap-10">
         {allChangelogPosts
