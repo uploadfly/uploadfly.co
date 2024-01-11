@@ -23,7 +23,7 @@ function Pricing() {
     },
     {
       name: "Pro",
-      price: 15,
+      price: 20,
       description: "For startups building production apps.",
       features: [
         "100 GB of storage",
