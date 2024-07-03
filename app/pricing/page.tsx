@@ -12,7 +12,7 @@ function Pricing() {
   const tiers = [
     {
       name: "Basic",
-      price: 7,
+      price: 5,
       description: "For small apps and hobby projects.",
       features: [
         "20 GB of storage",
